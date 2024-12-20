@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Focused Tab Manager",
+    "version": "1.0",
+    "description": "Select and close distracting tabs to focus on important tasks.",
+    "permissions": ["tabs"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icons/icon.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }

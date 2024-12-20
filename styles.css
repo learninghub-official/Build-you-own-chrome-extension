@@ -1,0 +1,112 @@
+/* General popup styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px; /* Added padding to the body to create space between content and boundaries */
+    background-color: #f4f4f9;
+    color: #333;
+    width: 300px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Header styling */
+  h1 {
+    font-size: 20px;
+    text-align: center;
+    color: #4CAF50; /* Green for attention */
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  /* Subtitle paragraph */
+  p {
+    font-size: 14px;
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Tab list container */
+  #tabs-list {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for each checkbox wrapper */
+  .checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for each checkbox wrapper */
+  .checkbox-wrapper:hover {
+    background-color: #e8f5e9; /* Light green background on hover */
+  }
+  
+  /* Checkbox styling */
+  .tab-checkbox {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+  }
+  
+  /* Label text styling */
+  .checkbox-wrapper label {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  /* Button styling */
+  #close-tabs-button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px; /* Adjusted padding for better alignment */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 15px; /* Add margin to space out the button */
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  #close-tabs-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Button disabled state */
+  #close-tabs-button:disabled {
+    background-color: #c1c1c1;
+    cursor: not-allowed;
+  }
+  
+  /* Ensure the popup content is neatly aligned */
+  .popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 350px) {
+    h1 {
+      font-size: 18px;
+    }
+  
+    #close-tabs-button {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  }
